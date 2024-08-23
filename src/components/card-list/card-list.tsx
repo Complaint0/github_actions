@@ -1,12 +1,12 @@
 import Card from '../card/card';
 import styles from './card-list.module.scss';
-export type Card = {
+export type CardType = {
 	id: number;
 	name: string;
 };
 
 type CardListProps = {
-	dataCard: Card[];
+	dataCard: CardType[];
 };
 
 export default function CardList({ dataCard }: CardListProps) {
